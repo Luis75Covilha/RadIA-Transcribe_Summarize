@@ -1,0 +1,31 @@
+# Local configuration and secrets
+.env
+.env.*
+
+# Dependencies
+node_modules/
+vendor/
+
+# Runtime output
+logs/
+*.log
+audio/
+*_transcricao.txt
+*_resumo_noticias.txt
+*_primeiros_*min_temp.mp3
+
+# Build and test output
+build/
+dist/
+coverage/
+
+# Private notes
+notes/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Other package manager files not used by this project
+composer.lock

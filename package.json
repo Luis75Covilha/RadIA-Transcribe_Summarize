@@ -1,0 +1,32 @@
+{
+  "name": "radia",
+  "version": "1.0.0",
+  "description": "Transcreve gravações de rádio, resume o conteúdo com IA e envia o resumo por email.",
+  "main": "radia.js",
+  "scripts": {
+    "start": "node radia.js",
+    "check": "node --check radia.js"
+  },
+  "keywords": [
+    "audio",
+    "transcription",
+    "radio",
+    "openai",
+    "email"
+  ],
+  "author": "Luis Fonseca",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luis75Covilha/radia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Luis75Covilha/radia/issues"
+  },
+  "homepage": "https://github.com/Luis75Covilha/radia#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "nodemailer": "^8.0.10",
+    "openai": "^6.39.1"
+  }
+}
