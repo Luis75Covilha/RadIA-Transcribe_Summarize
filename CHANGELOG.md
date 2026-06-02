@@ -8,6 +8,7 @@ This project follows a simple chronological changelog format inspired by [Keep a
 
 ### Planned
 
+- View recording time in hours:mins:secs instead of all-seconds.
 - Clean old logs automatically.
 - Allow attaching the transcript to the email in addition to the summary.
 - Make the summary prompt configurable.
