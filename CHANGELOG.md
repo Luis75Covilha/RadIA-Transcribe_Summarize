@@ -6,6 +6,10 @@ This project follows a simple chronological changelog format inspired by [Keep a
 
 ## [Unreleased]
 
+### Added
+
+- Add a transcription prompt to keep Rádio de Cabo Verde transcripts anchored in European Portuguese when Cape Verdean Creole excerpts appear.
+
 ### Planned
 
 - Clean old logs automatically.

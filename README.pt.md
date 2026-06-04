@@ -94,6 +94,7 @@ O ficheiro de exemplo chama-se `env.example`(sem o ponto final inicial - .env - 
 | `MAX_FILE_AGE_MINUTES` | Não | Idade máxima, em minutos, para aceitar o MP3 mais recente. Predefinição: `60`. |
 | `TRANSCRIPTION_MODEL` | Não | Modelo de transcrição. Predefinição: `gpt-4o-mini-transcribe`. |
 | `TRANSCRIPTION_LANGUAGE` | Não | Código da língua do áudio. Predefinição: `pt`. |
+| `TRANSCRIPTION_PROMPT` | Não | Prompt opcional para orientar o estilo/língua da transcrição. Por defeito, o script indica que o áudio é um noticiário da Rádio de Cabo Verde em português europeu, com possíveis excertos em crioulo cabo-verdiano, e pede para não derivar para espanhol. |
 | `SUMMARY_MODEL` | Não | Modelo usado para criar o resumo. Predefinição: `gpt-4o-mini`. |
 | `SMTP_HOST` | Sim | Servidor SMTP. |
 | `SMTP_PORT` | Sim | Porta SMTP, normalmente `587`, `465` ou `25`. |

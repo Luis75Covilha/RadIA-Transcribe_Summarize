@@ -95,6 +95,7 @@ The example configuration file is named `env.example`, without the initial dot f
 | `MAX_FILE_AGE_MINUTES` | No | Maximum age, in minutes, for accepting the most recent MP3. Default: `60`. |
 | `TRANSCRIPTION_MODEL` | No | Transcription model. Default: `gpt-4o-mini-transcribe`. |
 | `TRANSCRIPTION_LANGUAGE` | No | Audio language code. Default: `pt`. |
+| `TRANSCRIPTION_PROMPT` | No | Optional prompt that guides transcription style/language. By default, the script tells the model the audio is Rádio de Cabo Verde news in European Portuguese with possible Cape Verdean Creole excerpts, and asks it not to drift into Spanish. |
 | `SUMMARY_MODEL` | No | Model used to create the summary. Default: `gpt-4o-mini`. |
 | `SMTP_HOST` | Yes | SMTP server. |
 | `SMTP_PORT` | Yes | SMTP port, usually `587`, `465`, or `25`. |

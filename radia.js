@@ -38,6 +38,18 @@ const CONFIG = {
   // Português. A API aceita códigos de língua como "pt".
   language: process.env.TRANSCRIPTION_LANGUAGE || "pt",
 
+  transcriptionPrompt:
+    process.env.TRANSCRIPTION_PROMPT ||
+    [
+      "Áudio de noticiário da Rádio de Cabo Verde.",
+      "A língua principal é português europeu.",
+      "Podem surgir excertos em crioulo cabo-verdiano.",
+      "Quando a fala for portuguesa, transcreve em português, não em espanhol.",
+      "Se surgir crioulo cabo-verdiano, transcreve esse excerto da forma mais fiel possível.",
+      "Depois de um excerto em crioulo, quando o locutor voltar ao português, volta imediatamente a transcrever em português.",
+      "Não traduzas nem convertas a transcrição para espanhol.",
+    ].join(" "),
+
   // A API tem limite de upload por ficheiro.
   // Mantemos 25 MB como limite de segurança.
   maxFileSizeBytes: 25 * 1024 * 1024,
@@ -313,6 +325,7 @@ async function transcribeAudio(filePath) {
     file: fs.createReadStream(filePath),
     model: CONFIG.transcriptionModel,
     language: CONFIG.language,
+    prompt: CONFIG.transcriptionPrompt,
 
     // Formato simples.
     // Para alguns modelos/formatos, podes usar "json" ou "text".
