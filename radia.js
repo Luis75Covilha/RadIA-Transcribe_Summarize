@@ -560,6 +560,8 @@ async function main() {
   const subject = `Resumo do noticiário RCV: ${newestMp3.name}`;
 
   const body = [
+    "ATENÇÃO: SÓ PARA USO INTERNO. TRANSCRIÇÃO E RESUMO FEITOS POR IA, PODEM CONTER ERROS.",
+    "",
     `Ficheiro analisado: ${newestMp3.name}`,
     `Pasta: ${CONFIG.audioFolder}`,
     `Duração aproximada: ${audioCheck.duration.toFixed(1)} segundos`,
