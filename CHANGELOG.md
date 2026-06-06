@@ -13,6 +13,7 @@ This project follows a simple chronological changelog format inspired by [Keep a
 
 ### Planned
 
+- Enhance summary transcritpion - sometimes fails to correctly identify all titles
 - View recording time in hours:mins:secs instead of all-seconds.
 - Clean old logs automatically.
 - Allow attaching the transcript to the email in addition to the summary.
